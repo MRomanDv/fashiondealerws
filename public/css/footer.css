@@ -1,0 +1,57 @@
+/*FOOTER*/
+footer {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    background: rgb(39, 37, 37);
+}
+.footer-content {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+    color: rgb(214, 202, 202);
+    background: rgb(39, 37, 37);
+    width: 100%;
+}
+
+.assistance-info {
+    display: flex;
+    gap: 2rem;
+}
+.assistance h5,
+.assistance2 h5 {
+    font-size: 3vmin;
+    margin-bottom: 1rem;
+    color:rgb(179, 31, 31) ;
+}
+.assistance-list li {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-size: 2vmin;
+    list-style: none;
+}
+.title-sn h5 {
+    font-size: 3vmin;
+    color: rgb(179, 31, 31);
+    margin-bottom: 1rem;
+}
+.icon-socialNet {
+    display: flex;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: 500ms;
+}
+.icon-socialNet:hover > i {
+color: rgb(179, 31, 31);
+transform: scale(1.5);
+}
+
+.icon-socialNet i {
+    margin-right: .8rem;
+    transition: 500ms;
+}
+.icon-socialNet i,
+.icon-socialNet p {
+    font-size: 3vmin;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--GOOGLEFONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Heebo:wght@300&family=Righteous&family=Rubik&family=Staatliches&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/signup.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>Sign Up to Fashion Dealer</title>
+</head>
+<body>
+    <section class="background">
+        <h2>Sign up to <span>Fashion Dealer</span></h2>
+        <div class="signup-container">
+            <form action="/signup" method="post" class="form">
+                <div class="input-box">
+                    <input type="text" name="name" id="name" placeholder="first name" required>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" name="lastname" id="lastname" placeholder="last name" required>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" name="user" id="user" placeholder="user" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="pass" id="pass" placeholder="insert password" required>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" placeholder="email" required>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox" required>
+                    <label for="checkbox">Agree with terms and conditions</label>
+                </div>
+                <div class="input-box-btn">
+                    <input type="submit" class="btn-signup" value="SEND">
+                </div>
+            </form>
+        </div>
+
+    </section>
+    
+
+     <!--Sweetalert2-->
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+   <% if(typeof alert != "undefined") { %>
+    <script>
+        Swal.fire({
+            title: '<%=alertTitle%>',
+            text: '<%=alertMessage%>',
+            icon: '<%=alertIcon%>',
+            showConfirmButton: <%= showConfirmButton %>,
+            timer: <%= timer %>
+        }).then(()=>{
+            window.location= '/ <%= ruta %>'
+        })
+    </script>
+    <%} %>  
+</body>
+</html>

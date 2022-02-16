@@ -1,0 +1,482 @@
+@import 'footer.css';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Staatliches', cursive;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.shopping {
+   width: 1.5em;
+}
+header {
+    width: 100vw;
+    text-align: center;
+   
+}
+.top-header {
+    width: 100%;
+    background: rgb(233, 233, 233);
+    display: flex;
+    justify-content:space-evenly ;
+    padding: 10px 0;
+    letter-spacing: 2px;
+    color: rgb(83, 83, 83);
+    text-align: center; 
+    
+}
+
+.stores-contact,
+.login-shoppin {
+    display: flex;
+    cursor: pointer;
+}
+.stores {
+    border-right: 1px solid #000;
+    padding-right: 15px;
+}
+.stores-contact a {
+    text-decoration: none;
+    color:rgb(83, 83, 83) ;
+}
+.stores,
+.contact,
+.shipping,
+.loginp,
+.signup {
+    transition: 500ms;
+}
+.stores:hover,
+.contact:hover,
+.shipping:hover,
+.loginp:hover,
+.signup:hover{
+   color:rgb(34, 34, 34) ;
+   transform: scale(1.2);
+}
+
+.shipping a {
+    text-decoration: none;
+    color: rgb(83, 83, 83);;
+}
+.contact {
+    padding-left: 15px;
+}
+.stores-contact p {
+    margin-right: 5px;
+    cursor: pointer;
+}
+.shoping {
+    margin-left: 15px;
+    display: flex;
+}
+.shoping img {
+    margin-right: 10px;
+    
+}
+
+.login-shoppin  {
+    align-items: center;
+}
+.shipping {
+    cursor: pointer;
+}
+.login-shoppin a {
+    text-decoration: none;
+    color:rgb(83, 83, 83) ;
+}
+.loginp {
+    margin-right: 15px;
+}
+.signup {
+    border-right: 1px solid #000;
+    padding-right: 15px;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.title h2 {
+    padding: 40px 0;
+    font-size: 6vmin;
+    letter-spacing: 15px;
+    color: rgb(48, 48, 48);
+   transition: 500ms;
+}
+.line {   
+    width: 55vmin;
+    border-bottom: 2px solid rgb(48, 48, 48);
+    transform-origin: left;
+}
+.title:hover > .line {
+    animation-name: line;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    transform-origin: left;
+
+}
+
+
+.video {
+    width: 80%;
+    margin: 80px auto;
+}
+.video video {
+    width: 100%;
+    pointer-events: none;
+}
+
+/*MENU NAV*/
+.menu-nav {
+    width: 80%;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    margin: 40px auto;
+    z-index: 1;
+}
+.menu-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-nav ul li {
+    list-style: none;
+    cursor: pointer;
+    
+}
+
+.menu-nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: 500ms;
+}
+
+
+.menu-nav ul li a:hover {
+    color: rgb(202, 10, 49);
+}
+
+
+/*VERSACE*/
+.versace {
+    margin-top: 200px;
+
+    width: 100vw;
+    position: relative;
+
+}
+.versace-bio {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+}
+.versace-bio_text {
+    padding: 50px;
+    color: rgb(223, 164, 39);
+    line-height: 3rem;
+    font-size: 3vmin;
+}
+.versace-bio_img img {
+    
+    opacity: 0;
+    transform: scale(.5);
+    transition: 500ms;
+    transform-origin: left;
+}
+.versace-bio_img img.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/*BALENCIAGA*/
+
+.balenciaga {
+    
+    width: 100vw;
+    position: relative;
+
+}
+
+/*AVAILABLE-PRODUCTS*/
+
+.product{
+    margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+h3{
+    padding: 0 10vw;
+    font-size: 5vmin;
+    font-weight: 500;
+    margin: 40px auto;
+    align-self: center;
+    text-transform: capitalize;
+}
+
+.product-container{
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar{
+    display: none;
+
+}
+.product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+}
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.product-image {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+.product-thumb {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+.discount-tag{
+    position: absolute;
+    background: #fff;
+    padding: 2px;
+    border-radius: 5px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+
+}
+.card-btn{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+.product-card:hover .card-btn{
+    opacity: 1;
+}
+.card-btn:hover{
+    background: #efefef;
+}
+.product-info{
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.product-brand{
+    text-transform: uppercase;
+}
+.product-short-description{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    margin: 5px 0;
+}
+.price{
+    font-weight: 900;
+    font-size: 20px;
+}
+.actual-price{
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+.pre-btn,
+.nxt-btn{
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,rgba(255,255,255,0)0%,#fff 100%);
+    cursor: pointer;
+    z-index: 8;
+}
+.pre-btn img,
+.nxt-btn img {
+    width: 2.5em;
+    transform: translateY(-110px);
+    opacity: 0.2;
+}
+ 
+.nxt-btn{
+    right: 0;
+}
+.pre-btn{
+    left: 0;
+}
+.pre-btn:hover img,
+.nxt-btn:hover img{
+    opacity: 1;
+    
+}
+
+
+/*MENU-BTN*/
+.menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 4vmin;
+    display: none;
+    z-index: 3;
+}
+
+
+
+/*ANIMATIONS*/
+@keyframes line {
+    0% {
+        transform: scale(0);
+        
+    }
+    100% {
+    transform: scale(1);
+    
+
+    }
+}
+
+/*MEDIA Q*/
+@media screen and (max-width:1470px) {
+    .versace-bio {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .assistance,
+    .assistance2 {
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .versace-bio_img img {
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px) {
+    .title h2 {
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+    .versace {
+        margin-top: 160px;
+    }
+    .versace-bio_text {
+        line-height: 2rem;
+    }
+    .top-header {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background: rgb(56, 56, 56);
+        font-size: 6vmin;
+        letter-spacing: 6px;
+        margin-left: -1000px;
+        position: absolute;
+        transition: all 500ms ease;
+        color: rgb(216, 214, 214);
+        z-index: 2;
+    }
+    .mobile-menu {
+        margin-left: 0;
+    }
+    .stores-contact,
+    .login-shoppin {
+        flex-direction: column;   
+    }
+    .shipping a {
+        color: rgb(216, 214, 214);
+    }
+
+    .menu-btn {
+        display: block;
+    }
+    .stores-contact a {
+        color: rgb(216, 214, 214);
+        
+    }
+    .stores-contact > * {
+        padding: 0;
+        border-right: none;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .login-shoppin > * {
+        padding: 0;
+        margin-right: 0;
+        border-right: none;
+        margin-bottom: 20px;
+        
+    }
+    .login-shoppin a {
+        color: rgb(216, 214, 214);
+    }
+    .shipping {
+        margin-bottom: 20px;
+    }
+    .shoping img {
+        display: none;
+    }
+}
+@media screen and (max-width:400px) {
+    .menu-nav {
+       margin-bottom: 15px;
+    }
+    .menu-nav ul {
+        flex-direction: column;
+
+    }
+    .pre-btn img,
+    .nxt-btn img {
+        width: 1.5rem;
+    }
+    
+}
+
