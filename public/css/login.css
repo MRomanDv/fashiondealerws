@@ -94,3 +94,9 @@ form .input-box input::placeholder {
         transform: scale(1);
     }
 }
+
+@media screen and (max-width:300px){
+    .signup-container {
+        padding: 20px;
+    }
+}

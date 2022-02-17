@@ -91,6 +91,15 @@ form .input-box input::placeholder {
     }
 }
 
+@media screen and (max-width:1050px) {
+    .background h2 {
+        font-size: 3.5rem;
+        padding: 60px;
+        
+        margin-bottom: 0;
+    }
+}
+
 @media screen and (max-width:790px){
     .background h2 {
         font-size: 3.5rem;
@@ -111,4 +120,5 @@ form .input-box input::placeholder {
     .signup-container {
         padding: 20px;
     }
+    
 }
